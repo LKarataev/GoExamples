@@ -1,0 +1,4 @@
+/var/log/orders.log
+/Users/baker/pokemon.avi
+/etc/stove/config.xml
+/var/log/orders2.log
