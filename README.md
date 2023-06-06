@@ -1,8 +1,8 @@
 # GoCompare
 
-## A Golang tool for comparing databases and finding differences.
+## A Golang tool for comparing databases and finding differences
 
-This project demonstrates how to compare two databases in different formats (JSON or XML) using Golang. The databases contain cook recipes with various ingredients and cooking times. The program reports any changes in the recipes, such as added, removed or modified ingredients or cakes. The project consists of three utilities: ReadDB, CompareDB and CompareTXT. ReadDB reads a database file and converts it to another format. CompareDB reads two database files and compares them. CompareTXT reads two text files and compares them line by line.
+This project demonstrates how to compare two databases in different formats (JSON or XML) using Golang. The databases contain cook recipes with various ingredients and cooking times. The program reports any changes in the recipes, such as added, removed or modified ingredients or cakes. The project consists of three utilities: ReadDB, CompareDB and CompareFS. ReadDB reads a database file and converts it to another format. CompareDB reads two database files and compares them. CompareFS reads two text files and compares them line by line.
 
 This project is intended to showcase my Golang skills and knowledge of databases.
 
