@@ -23,23 +23,23 @@ To use this project, you need to have some database files in JSON or XML format 
 To run the ReadDB utility, use the following command:
 
 ```bash
-go run ReadDB.go -f data/cakes.json
+go run ReadDB -f data/new_recipes.json
 ```
 
-This will read the `cakes.json` file and convert it to XML format. You can also specify a different file name or format using the `-f` flag.
+This will read the `new_recipes.json` file and convert it to XML format. You can also specify different file names using the `-f` flag.
 
 To run the CompareDB utility, use the following command:
 
 ```bash
-go run CompareDB.go -old data/cakes.json -new data/cakes.xml
+go run CompareDB --old data/old_recipes.xml --new data/new_recipes.json
 ```
 
-This will read the `cakes.json` and `cakes.xml` files and compare them. You can also specify different file names using the `-old` and `-new` flags.
+This will read the `old_recipes.xml` and `new_recipes.json` files and compare them. You can also specify different file names using the `-old` and `-new` flags.
 
 To run the CompareFS utility, use the following command:
 
 ```bash
-go run CompareFS.go -old data/files.txt -new data/files2.txt
+go run CompareFS --old data/snapshot1.txt --new data/snapshot2.txt
 ```
 
-This will read the `files.txt` and `files2.txt` files and compare them line by line. You can also specify different file names using the `-old` and `-new` flags.
+This will read the `snapshot1.txt` and `snapshot2.txt` files and compare them line by line. You can also specify different file names using the `-old` and `-new` flags.
