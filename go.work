@@ -1,7 +1,4 @@
 go 1.22
 
-use ./ReadDB
+use ./JSON-XML/CompareDB
 
-use ./CompareDB
-
-use ./CompareFS
