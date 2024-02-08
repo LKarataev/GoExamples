@@ -1,5 +1,7 @@
-go 1.20
+go 1.22
 
 use ./ReadDB
+
 use ./CompareDB
+
 use ./CompareFS
