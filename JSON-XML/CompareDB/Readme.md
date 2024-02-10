@@ -19,7 +19,7 @@ go run CompareDB --old JSON-XML/CompareDB/old_recipes.xml --new JSON-XML/Compare
 ```
 
 Вывод:
-
+```output
 > ADDED cake "Moonshine Muffin"
 > CHANGED cooking time for cake "Red Velvet Strawberry Cake" - "45 min" instead of "40 min"
 > CHANGED unit for ingredient "Flour" for cake "Red Velvet Strawberry Cake" - "mugs" instead of "cups"
@@ -29,4 +29,4 @@ go run CompareDB --old JSON-XML/CompareDB/old_recipes.xml --new JSON-XML/Compare
 > REMOVED unit "pieces" for ingredient "Cinnamon" for cake "Red Velvet Strawberry Cake"
 > REMOVED ingredient "Vanilla extract" for cake "Red Velvet Strawberry Cake"
 > REMOVED cake "Blueberry Muffin Cake"
-
+```
