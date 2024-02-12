@@ -1,6 +1,6 @@
 
 
-## CompareDB
+## CompareTXT
 
 CompareTXT - это маленькая CLI утилита, которая сравнивает два текстовых файла по содержащимся в них строкам.
 
@@ -14,16 +14,16 @@ CompareTXT - это маленькая CLI утилита, которая сра
 > REMOVED *содержимое удалённой строки*
 ```
 
-Файлы для теста (лежат в этой же директории):
+Файлы для теста:
  - old.txt
  - new.txt
 
 Для запуска вам нужно указать в опциях *--old* и *--new* пути до этих файлов.
 
-Как протестировать (из корневой директории):
+Как протестировать:
 
 ```bash
-go run JSON-XML/CompareTXT/CompareTXT.go --old JSON-XML/CompareTXT/old.txt --new JSON-XML/CompareTXT/new.txt
+go run CompareTXT.go --old old.txt --new new.txt
 ```
 
 Вывод:

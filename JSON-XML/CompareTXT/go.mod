@@ -1,3 +1,3 @@
-module CompareFS
+module CompareTXT
 
 go 1.22

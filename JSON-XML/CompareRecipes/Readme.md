@@ -6,16 +6,16 @@ CompareRecipes - это маленькая CLI утилита, которая с
 
 Предположим, у вас есть файл с рецептами, вы эксперементировали с ними и со временем вносили изменения. Также у вас остался старый файл, где ещё нет новых изменений в рецептах. И вы хотите сравнить - как поменялись ваши рецепты. Тогда такая утилита может вам помочь. 
 
-Файлы для теста (лежат в этой же директории):
+Файлы для теста:
  - old_recipes.xml
  - new_recipes.json
 
 Для запуска вам нужно указать в опциях *--old* и *--new* пути до этих файлов.
 
-Как протестировать (из корневой директории):
+Как протестировать:
 
 ```bash
-go run JSON-XML/CompareRecipes/CompareRecipes.go --old JSON-XML/CompareRecipes/old_recipes.xml --new JSON-XML/CompareRecipes/new_recipes.json
+go run CompareRecipes.go --old old_recipes.xml --new new_recipes.json
 ```
 
 Вывод:

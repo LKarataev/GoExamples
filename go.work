@@ -2,3 +2,4 @@ go 1.22
 
 use ./JSON-XML/CompareRecipes
 use ./JSON-XML/CompareTXT
+use ./JSON-XML/ConvertRecipe

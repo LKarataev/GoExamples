@@ -1,3 +1,3 @@
-module CompareDB
+module CompareRecipes
 
 go 1.22
