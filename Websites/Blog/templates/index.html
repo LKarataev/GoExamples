@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{.title}}</title>
+</head>
+
+<body>
+    <header>
+        <img src="/images/amazing_logo.png" alt="logo" width="50" height="50">
+    </header>
+    <main>
+        <h1>{{.title}}</h1>
+        {{range .articles}}
+        <article>
+            <h2><a href="/article/{{.ID}}">{{.Title | markDown}}</a></h2>
+            <p>{{.Content | markDown}}</p>
+        </article>
+        {{end}}
+        {{if .pagination}}
+        <nav>
+            {{if .pagination.HasPrevPage}}
+            <a href="?page={{sub .pagination.Page 1}}">&lt; Prev</a>
+            {{end}}
+            {{if .pagination.HasNextPage}}
+            <a href="?page={{add .pagination.Page 1}}">Next &gt;</a>
+            {{end}}
+        </nav>
+        {{end}}
+
+    </main>
+</body>
+
+</html>
