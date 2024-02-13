@@ -1,3 +1,3 @@
-module ex01
+module Crawler
 
 go 1.22

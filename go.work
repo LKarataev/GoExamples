@@ -4,3 +4,6 @@ use ./JSON-XML/CompareRecipes
 use ./JSON-XML/CompareTXT
 use ./JSON-XML/ConvertRecipe
 use ./Concurrency/SleepSort
+use ./Concurrency/Crawler
+use ./Concurrency/MultiplexChs
+

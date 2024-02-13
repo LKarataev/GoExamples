@@ -132,6 +132,8 @@ func doThingThatShouldBeLimited() string {
 	return "done"
 }
 
+Пример:
+
 func main() {
 	pg := New(10)
 	http.HandleFunc("/request", func(w http.ResponseWriter, r *http.Request) {
