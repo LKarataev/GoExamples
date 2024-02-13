@@ -50,4 +50,5 @@ Height(unit="inches"): 15
 
 FlowerName: Chamomile
 LeafSize: 0.4
+LeafColor(color_scheme="color_name"): White
 ```
