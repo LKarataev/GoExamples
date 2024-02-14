@@ -3,15 +3,16 @@ package main
 import (
 	"database/sql"
 	"fmt"
+	"html/template"
+	"log"
+	"math"
+
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-contrib/sessions/cookie"
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"
 	"github.com/russross/blackfriday"
 	"golang.org/x/time/rate"
-	"html/template"
-	"log"
-	"math"
 
 	"bufio"
 	"net/http"
@@ -74,6 +75,7 @@ func routerProcess() {
 	})
 
 	router.StaticFS("/images", http.Dir("./images"))
+	router.StaticFS("/css", http.Dir("./css"))
 	router.LoadHTMLGlob("templates/*.html")
 
 	router.GET("/", showIndexPage)
@@ -124,7 +126,7 @@ func showIndexPage(c *gin.Context) {
 	pagination := NewPagination(page, pageSize, totalCount)
 
 	c.HTML(http.StatusOK, "index.html", gin.H{
-		"title":      "Hugh Metallo - Blog",
+		"title":      "My amazing blog",
 		"articles":   articles,
 		"pagination": pagination,
 	})

@@ -1,0 +1,83 @@
+/* Стиль для заголовков h1 */
+h1 {
+    color: #333; /* Цвет текста */
+    font-family: Arial, sans-serif; /* Шрифт */
+    font-size: 28px; /* Размер шрифта */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Стиль для заголовков h2 */
+h2 {
+    color: #555;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Стиль для параграфов */
+p {
+    color: #777;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 1.5; /* Межстрочный интервал */
+}
+
+/* Стиль для ссылок */
+a {
+    color: #0074D9;
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+a:hover {
+    color: #0056b3; /* Цвет при наведении */
+}
+
+/* Стиль для блока <article> */
+article {
+    border: 1px solid #ddd; /* Граница вокруг блока */
+    padding: 20px; /* Отступ внутри блока */
+    margin-bottom: 20px; /* Отступ снизу между блоками */
+    background-color: #f9f9f9; /* Фоновый цвет блока */
+}
+
+/* Стиль для заголовков <h2> внутри блока <article> */
+article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Стиль для текста <p> внутри блока <article> */
+article p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* styles.css */
+
+/* Стиль для контейнера пагинации */
+nav {
+    text-align: center; /* Центрирование элементов */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+/* Стиль для ссылок пагинации */
+nav a {
+    color: #0074D9;
+    text-decoration: none;
+    padding: 5px 10px; /* Отступы вокруг текста */
+    margin: 0 5px; /* Отступы между ссылками */
+    border: 1px solid #ddd; /* Граница вокруг ссылок */
+    border-radius: 5px; /* Закругление углов */
+    transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+/* Стиль для активной ссылки пагинации */
+nav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Стиль для ссылок при наведении */
+nav a:hover:not(.active) {
+    background-color: #ddd;
+}
