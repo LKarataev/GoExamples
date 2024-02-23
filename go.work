@@ -10,3 +10,7 @@ use ./Unsafe/ElemGetter
 use ./Reflect/DescribePlant
 use ./Godoc/MinCoins
 use ./Websites/Blog
+use ./Algorithms/BinaryTree/IsBalanced
+use ./Algorithms/BinaryTree/ZigZagTraversal
+use ./Algorithms/Heap/SortPresents
+use ./Algorithms/DynamicProgramming/KnapsackProblem
