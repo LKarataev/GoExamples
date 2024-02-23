@@ -1,8 +1,8 @@
 go 1.22
 
-use ./JSON-XML/CompareRecipes
-use ./JSON-XML/CompareTXT
-use ./JSON-XML/ConvertRecipe
+use ./Data-formats/CompareRecipes
+use ./Data-formats/CompareTXT
+use ./Data-formats/ConvertRecipe
 use ./Concurrency/SleepSort
 use ./Concurrency/Crawler
 use ./Concurrency/MultiplexChs
@@ -14,3 +14,7 @@ use ./Algorithms/BinaryTree/IsBalanced
 use ./Algorithms/BinaryTree/ZigZagTraversal
 use ./Algorithms/Heap/SortPresents
 use ./Algorithms/DynamicProgramming/KnapsackProblem
+use ./CLI-apps/Find
+use ./CLI-apps/Rotate
+use ./CLI-apps/Wc
+use ./CLI-apps/Xargs
