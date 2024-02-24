@@ -18,3 +18,4 @@ use ./CLI-apps/Find
 use ./CLI-apps/Rotate
 use ./CLI-apps/Wc
 use ./CLI-apps/Xargs
+use ./CLI-apps/AnscombeQuartet
